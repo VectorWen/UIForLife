@@ -13,24 +13,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#f00"
-        android:text="这里是写说明的" />
+        android:text="选择图片" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PinnedHeaderListView"
-        android:id="@+id/pinned_header_btn" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Network"
-        android:id="@+id/network_btn" />
+        android:text="Picture"
+        android:id="@+id/picture" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Camera"
-        android:id="@+id/camera_btn" />
+        android:id="@+id/camera" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_qiwei_1"
+        android:id="@+id/image" />
 
 
 </LinearLayout>

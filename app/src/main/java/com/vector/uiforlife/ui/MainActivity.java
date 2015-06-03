@@ -35,6 +35,10 @@ public class MainActivity extends BaseActivity {
         void networkBtnClick(){
             startActivity(NetworkActivity.class);
         }
+        @OnClick(R.id.camera_btn)
+        void cameraBtnClick(){
+            startActivity(CameraActivity.class);
+        }
 
         ViewHolder(View view) {
             ButterKnife.inject(this, view);
