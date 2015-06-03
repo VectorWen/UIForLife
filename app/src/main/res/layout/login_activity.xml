@@ -13,19 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#f00"
-        android:text="这里是写说明的" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PinnedHeaderListView"
-        android:id="@+id/pinned_header_btn" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Network"
-        android:id="@+id/network_btn" />
-
-
+        android:text="我是登陆界面" />
 
 </LinearLayout>

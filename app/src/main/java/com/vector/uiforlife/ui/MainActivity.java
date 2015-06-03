@@ -31,6 +31,10 @@ public class MainActivity extends BaseActivity {
         void pinnedHeaderBtnClick(){
             startActivity(PinnedHeaderActy.class);
         }
+        @OnClick(R.id.network_btn)
+        void networkBtnClick(){
+            startActivity(NetworkActivity.class);
+        }
 
         ViewHolder(View view) {
             ButterKnife.inject(this, view);
