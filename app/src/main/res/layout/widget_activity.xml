@@ -13,42 +13,51 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#f00"
-        android:text="这里是写说明的" />
+        android:text="单选按钮" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/radio_button_color"
+        android:text="New RadioButton"
+        android:background="@drawable/radio_button_bg"
+        android:id="@+id/radioButton"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/radio_button_color"
+        android:background="@drawable/radio_button_bg"
+        android:checked="true"
+        android:text="New RadioButton"
+        android:id="@+id/radioButton2" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:textColor="@color/radio_button_color"
+        android:background="@drawable/radio_button_bg"
+        android:text="New RadioButton"
+        android:id="@+id/radioButton3" />
+    </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PinnedHeaderListView"
-        android:id="@+id/pinned_header_btn" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Network"
-        android:id="@+id/network_btn" />
+        android:text="set click = false"
+        android:id="@+id/click_false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Camera"
-        android:id="@+id/camera_btn" />
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ShowImages"
-        android:id="@+id/show_images_btn" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TimeDate"
-        android:id="@+id/time_date_btn" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TimeDate"
-        android:id="@+id/widget"/>
+        android:text="set click = true"
+        android:id="@+id/click_true" />
 
 
 </LinearLayout>
