@@ -12,6 +12,7 @@ import com.vector.uiforlife.network.Bloodsucker;
  */
 public class BaseActivity extends Activity {
 
+    //每一个Activity 都可以访问网络
     public Bloodsucker mBloodsucker = new Bloodsucker(this);
 
     @Override

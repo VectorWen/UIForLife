@@ -1,14 +1,11 @@
 package com.vector.uiforlife.ui;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.vector.uiforlife.R;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import butterknife.OnClick;
 
 
@@ -29,7 +26,7 @@ public class MainActivity extends BaseActivity {
 
         @OnClick(R.id.pinned_header_btn)
         void pinnedHeaderBtnClick(){
-            startActivity(PinnedHeaderActy.class);
+            startActivity(PinnedHeaderActivity.class);
         }
         @OnClick(R.id.network_btn)
         void networkBtnClick(){
@@ -38,6 +35,10 @@ public class MainActivity extends BaseActivity {
         @OnClick(R.id.camera_btn)
         void cameraBtnClick(){
             startActivity(CameraActivity.class);
+        }
+        @OnClick(R.id.show_images_btn)
+        void showImagesClick(){
+            startActivity(ShowImagesActivity.class);
         }
 
         ViewHolder(View view) {

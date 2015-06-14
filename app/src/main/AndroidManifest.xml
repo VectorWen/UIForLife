@@ -17,10 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.PinnedHeaderActy" />
+        <activity android:name=".ui.PinnedHeaderActivity" />
         <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.NetworkActivity" />
         <activity android:name=".ui.CameraActivity" />
+        <activity android:name=".ui.ShowImagesActivity" />
     </application>
 
 </manifest>

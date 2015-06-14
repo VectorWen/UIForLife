@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <com.vector.uiforlife.view.CircleImageView
+        android:id="@+id/circle_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:border_color="#ff0000"
+        app:border_width="2dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_qiwei_1"/>
+
+</LinearLayout>

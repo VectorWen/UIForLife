@@ -2,7 +2,6 @@ package com.vector.uiforlife.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
@@ -21,7 +20,7 @@ import butterknife.InjectView;
 /**
  * Created by Administrator on 2015/6/2.
  */
-public class PinnedHeaderActy extends Activity {
+public class PinnedHeaderActivity extends Activity {
 
     private ViewHolder mViewHolder;
     private String[] mHeaderContent;
@@ -71,7 +70,7 @@ public class PinnedHeaderActy extends Activity {
         private void setData( String[] headerContent, List<String> headerSections,
                               List<Integer> headerPosition){
             if(mAdapter == null){
-                mAdapter = new PinnedHeaderAdapter(PinnedHeaderActy.this,headerContent,headerSections,headerPosition);
+                mAdapter = new PinnedHeaderAdapter(PinnedHeaderActivity.this,headerContent,headerSections,headerPosition);
             }
             friendsDisplay.setAdapter(mAdapter);
             friendsDisplay.setOnScrollListener(mAdapter);
@@ -81,7 +80,7 @@ public class PinnedHeaderActy extends Activity {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Toast.makeText(PinnedHeaderActy.this,"position = "+position,Toast.LENGTH_LONG).show();
+            Toast.makeText(PinnedHeaderActivity.this,"position = "+position,Toast.LENGTH_LONG).show();
         }
     }
 }
