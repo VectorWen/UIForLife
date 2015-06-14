@@ -38,6 +38,11 @@
         android:layout_height="wrap_content"
         android:text="ShowImages"
         android:id="@+id/show_images_btn" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimeDate"
+        android:id="@+id/time_date_btn" />
 
 
 </LinearLayout>

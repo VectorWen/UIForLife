@@ -40,6 +40,10 @@ public class MainActivity extends BaseActivity {
         void showImagesClick(){
             startActivity(ShowImagesActivity.class);
         }
+        @OnClick(R.id.time_date_btn)
+        void timeDateClick(){
+            startActivity(TimeDateActivity.class);
+        }
 
         ViewHolder(View view) {
             ButterKnife.inject(this, view);

@@ -22,6 +22,7 @@
         <activity android:name=".ui.NetworkActivity" />
         <activity android:name=".ui.CameraActivity" />
         <activity android:name=".ui.ShowImagesActivity" />
+        <activity android:name=".ui.TimeDateActivity" />
     </application>
 
 </manifest>

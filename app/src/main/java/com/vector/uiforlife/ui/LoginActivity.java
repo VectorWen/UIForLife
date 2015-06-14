@@ -1,6 +1,8 @@
 package com.vector.uiforlife.ui;
 
 import android.os.Bundle;
+import android.os.SystemClock;
+import android.text.format.Time;
 import android.view.View;
 
 import com.vector.uiforlife.R;
