@@ -21,7 +21,7 @@ public class CircleImageView extends ImageView {
 
   private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;
 
-  private static final Bitmap.Config BITMAP_CONFIG = Bitmap.Config.ARGB_8888;
+  private static final Bitmap.Config BITMAP_CONFIG = Bitmap.Config.ARGB_8888;//32位编码
   private static final int COLOR_DRAWABLE_DIMENSION = 1;
 
   private static final int DEFAULT_BORDER_WIDTH = 0;
@@ -86,6 +86,7 @@ public class CircleImageView extends ImageView {
       throw new IllegalArgumentException(String.format("ScaleType %s not supported.", scaleType));
     }
   }
+
 
   @Override
   protected void onDraw(Canvas canvas) {
