@@ -44,12 +44,12 @@ public class WidgetActivity extends BaseActivity {
     void clickTrue(){
         radioButton.setClickable(true);
         radioButton.setTextColor(getResources().getColorStateList(R.color.radio_button_color));
-        radioButton.setBackground(getResources().getDrawable(R.drawable.radio_button_bg));
+        radioButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.radio_button_bg));
         radioButton2.setClickable(true);
         radioButton2.setTextColor(getResources().getColorStateList(R.color.radio_button_color));
-        radioButton2.setBackground(getResources().getDrawable(R.drawable.radio_button_bg));
+        radioButton2.setBackgroundDrawable(getResources().getDrawable(R.drawable.radio_button_bg));
         radioButton3.setClickable(true);
         radioButton3.setTextColor(getResources().getColorStateList(R.color.radio_button_color));
-        radioButton3.setBackground(getResources().getDrawable(R.drawable.radio_button_bg));
+        radioButton3.setBackgroundDrawable(getResources().getDrawable(R.drawable.radio_button_bg));
     }
 }

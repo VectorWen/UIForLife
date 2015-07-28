@@ -43,9 +43,14 @@ public class MainActivity extends BaseActivity {
         @OnClick(R.id.time_date_btn)
         void timeDateClick(){
             startActivity(TimeDateActivity.class);
-        } @OnClick(R.id.widget)
+        }
+        @OnClick(R.id.widget)
         void widgetClick(){
             startActivity(WidgetActivity.class);
+        }
+        @OnClick(R.id.drawer_layout)
+        void drawerLayoutClick(){
+            startActivity(DrawerLayoutActivity.class);
         }
 
         ViewHolder(View view) {

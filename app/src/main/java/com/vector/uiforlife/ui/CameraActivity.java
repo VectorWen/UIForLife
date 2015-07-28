@@ -12,7 +12,9 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.vector.uiforlife.R;
 
@@ -45,6 +47,17 @@ public class CameraActivity extends BaseActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(data != null){
+            StringBuilder builder = new StringBuilder();
+            builder.append("Action = ").append(data.getAction());
+            builder.append("\nType = ").append(data.getType());
+            builder.append("\nData = ").append(data.getData());
+            Bundle bundle = data.getExtras();
+            builder.append("\nExtras = ").append(bundle);
+            builder.append("\nExtras.Par...data = ").append(data.getParcelableExtra("data"));
+            mViewHolder.mComment.setText(builder.toString());
+        }
+
         if(resultCode != RESULT_OK){
             return;
         }
@@ -163,8 +176,17 @@ public class CameraActivity extends BaseActivity {
      */
     class ViewHolder {
 
+        @InjectView(R.id.comment)
+        TextView mComment;
+
         @InjectView(R.id.image)
         ImageView mImageView;
+
+        @InjectView(R.id.corp)
+        CheckBox mCorp;
+
+        @InjectView(R.id.simple)
+        CheckBox mSimple;
 
         @OnClick(R.id.picture)
         void pictureClick(View view){
@@ -172,13 +194,15 @@ public class CameraActivity extends BaseActivity {
             Intent intent = new Intent();
             intent.setType("image/*");
             intent.setAction(Intent.ACTION_PICK);
-            intent.putExtra("crop", "true");
-            // 裁剪框的比例，1：1
-            intent.putExtra("aspectX", 1);
-            intent.putExtra("aspectY", 1);
-            // 裁剪后输出图片的尺寸大小
-            intent.putExtra("outputX", 200);
-            intent.putExtra("outputY", 200);
+            if(mCorp.isChecked()){
+                intent.putExtra("crop", "true");
+                // 裁剪框的比例，1：1
+                intent.putExtra("aspectX", 1);
+                intent.putExtra("aspectY", 1);
+                // 裁剪后输出图片的尺寸大小
+                intent.putExtra("outputX", 200);
+                intent.putExtra("outputY", 200);
+            }
             intent.putExtra("noFaceDetection", true);// 取消人脸识别
 
             startActivityForResult(intent, choose_picture);
@@ -193,6 +217,15 @@ public class CameraActivity extends BaseActivity {
             mIntent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
             mIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(pictureFile));
             mIntent.putExtra(MediaStore.Images.Media.ORIENTATION, 0);
+            if(mCorp.isChecked()){
+                mIntent.putExtra("crop", "true");
+                // 裁剪框的比例，1：1
+                mIntent.putExtra("aspectX", 1);
+                mIntent.putExtra("aspectY", 1);
+                // 裁剪后输出图片的尺寸大小
+                mIntent.putExtra("outputX", 200);
+                mIntent.putExtra("outputY", 200);
+            }
             startActivityForResult(mIntent, choose_camera);
         }
 
