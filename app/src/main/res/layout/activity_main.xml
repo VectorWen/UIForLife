@@ -59,6 +59,12 @@
         android:text="DrawerLayout 抽屉式布局"
         android:id="@+id/drawer_layout"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListView 集合"
+        android:id="@+id/list_view"/>
+
 
 </LinearLayout>
 

@@ -29,7 +29,7 @@ public class PinnedHeaderActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pinned_header_acty);
+        setContentView(R.layout.activity_pinned_header);
         mViewHolder = new ViewHolder(getWindow().getDecorView());
         initData();
     }
@@ -75,7 +75,7 @@ public class PinnedHeaderActivity extends Activity {
             friendsDisplay.setAdapter(mAdapter);
             friendsDisplay.setOnScrollListener(mAdapter);
             friendsDisplay.setPinnedHeaderView(getLayoutInflater().inflate(
-                    R.layout.listview_head, friendsDisplay, false));
+                    R.layout.activity_listview_head, friendsDisplay, false));
         }
 
         @Override

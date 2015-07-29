@@ -1,12 +1,9 @@
 package com.vector.uiforlife.ui;
 
-import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.widget.RadioButton;
 
 import com.vector.uiforlife.R;
-
-import java.util.logging.XMLFormatter;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -25,7 +22,7 @@ public class WidgetActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.widget_activity);
+        setContentView(R.layout.activity_widget);
         ButterKnife.inject(this);
     }
     @OnClick(R.id.click_false)

@@ -50,7 +50,7 @@ public class NetworkActivity extends BaseActivity implements Bloodsucker.Bloodsu
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.network_activity);
+        setContentView(R.layout.activity_network);
         ButterKnife.inject(this);
         mBloodsucker.get(0,"http://www.baidu.com",this,this);
     }

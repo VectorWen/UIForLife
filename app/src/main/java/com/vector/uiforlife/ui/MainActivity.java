@@ -52,6 +52,10 @@ public class MainActivity extends BaseActivity {
         void drawerLayoutClick(){
             startActivity(DrawerLayoutActivity.class);
         }
+        @OnClick(R.id.list_view)
+        void listViewClick(){
+            startActivity(ListViewActivity.class);
+        }
 
         ViewHolder(View view) {
             ButterKnife.inject(this, view);
