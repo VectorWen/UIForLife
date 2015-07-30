@@ -56,6 +56,10 @@ public class MainActivity extends BaseActivity {
         void listViewClick(){
             startActivity(ListViewActivity.class);
         }
+        @OnClick(R.id.show_fragment)
+        void showFragmentClick(){
+            startActivity(ShowFragmentActivity.class);
+        }
 
         ViewHolder(View view) {
             ButterKnife.inject(this, view);

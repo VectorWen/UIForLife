@@ -26,6 +26,7 @@
         <activity android:name=".ui.WidgetActivity" />
         <activity android:name=".ui.DrawerLayoutActivity" />
         <activity android:name=".ui.ListViewActivity" />
+        <activity android:name=".ui.ShowFragmentActivity" />
     </application>
 
 </manifest>
