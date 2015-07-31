@@ -21,6 +21,7 @@ android {
 
 dependencies {
     compile project(':SwipeMenuListView')
+    compile project(':SwitchButton')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('libs/butterknife-6.0.0.jar')
     compile files('libs/volley.jar')

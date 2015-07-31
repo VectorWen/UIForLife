@@ -3,7 +3,11 @@ package com.vector.uiforlife.ui;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
+import com.vector.uiforlife.R;
+import com.vector.uiforlife.fragment.ButtonFragment;
 import com.vector.uiforlife.fragment.WebFragment;
 
 /**
@@ -13,16 +17,56 @@ import com.vector.uiforlife.fragment.WebFragment;
  * @date 2015/7/30.
  */
 public class ShowFragmentActivity extends Activity{
+
+    private String mUrl;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String fragmentName = getIntent().getStringExtra("fragment");
+        mUrl = getIntent().getStringExtra("url");
+
+        switch (fragmentName){
+            case "ButtonFragment":
+                ButtonFragment buttonFragment = new ButtonFragment();
+                setFragment(buttonFragment);
+                break;
+            default:
+                startWebFragment(mUrl);
+                break;
+        }
+    }
+
+    private void startWebFragment(String url){
         WebFragment webFragment = new WebFragment();
         Bundle bundle = new Bundle();
-        bundle.putString("url","1234567890-=");
+        bundle.putString("url",url);
         webFragment.setArguments(bundle);
         setFragment(webFragment);
     }
+
     public void setFragment(Fragment fragment){
         getFragmentManager().beginTransaction().replace(android.R.id.content,fragment).commit();
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_study) {
+            startWebFragment(mUrl);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

@@ -71,6 +71,12 @@
         android:text="ShowFragment 显示Fragment"
         android:id="@+id/show_fragment"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ButtonFragment 各种按钮"
+        android:id="@+id/button_fragment"/>
+
 
 </LinearLayout>
 

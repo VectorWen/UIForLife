@@ -1,9 +1,11 @@
 package com.vector.uiforlife.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.vector.uiforlife.R;
+import com.vector.uiforlife.fragment.ButtonFragment;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -59,6 +61,13 @@ public class MainActivity extends BaseActivity {
         @OnClick(R.id.show_fragment)
         void showFragmentClick(){
             startActivity(ShowFragmentActivity.class);
+        }
+        @OnClick(R.id.button_fragment)
+        void buttonFragmentClick(){
+            Intent intent = new Intent(MainActivity.this,ShowFragmentActivity.class);
+            intent.putExtra("fragment","ButtonFragment");
+            intent.putExtra("url","file:///android_asset/studyHtml/switch_button.html");
+            startActivity(intent);
         }
 
         ViewHolder(View view) {
