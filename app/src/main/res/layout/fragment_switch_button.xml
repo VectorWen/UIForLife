@@ -28,7 +28,7 @@
         style="@style/MaterialDesignStyle" />
     <TextView
         style="@style/StyleTitleText"
-        android:text="库提供的样式" />
+        android:text="定义样式" />
 
     <com.kyleduo.switchbutton.SwitchButton
         android:id="@+id/sb_custom"
@@ -37,6 +37,10 @@
         app:onDrawable="@drawable/ic_switch_button_on"
         app:offDrawable="@drawable/ic_switch_button_off"
         app:thumbDrawable="@drawable/ic_switch_button_thumb"
+        app:thumb_margin="3dp"
+        app:insetLeft="10dp"
+        app:insetRight="10dp"
+
         />
 
 </LinearLayout>

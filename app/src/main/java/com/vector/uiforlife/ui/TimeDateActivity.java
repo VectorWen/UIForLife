@@ -3,14 +3,9 @@ package com.vector.uiforlife.ui;
 import android.os.Bundle;
 import android.text.format.Time;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.vector.uiforlife.R;
-
-import java.text.SimpleDateFormat;
-import java.util.TimeZone;
-import java.util.logging.SimpleFormatter;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -25,8 +20,14 @@ public class TimeDateActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.time_date);
+        setContentView(R.layout.activity_time_date);
         ButterKnife.inject(this);
+    }
+
+    @OnClick(R.id.wheel_date)
+    void wheelDateClick(View v){
+        time = new Time();
+        mShowContent.setText(getStringForTime(time));
     }
 
     @OnClick(R.id.new_time)
@@ -61,6 +62,7 @@ public class TimeDateActivity extends BaseActivity {
       time.switchTimezone("Asia/Taipei");
       mShowContent.setText(getStringForTime(time));
     }
+
   @OnClick(R.id.time_zone_utc)
     void utcClick(View v){
       time = new Time();

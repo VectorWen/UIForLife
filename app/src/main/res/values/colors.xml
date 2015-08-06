@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- base -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_press">#a5ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_bg">#50000000</color>
+    <!-- 字体颜色最浅色的需求上 -->
+    <color name="gray_light">#c1c1c1</color>
+    <!-- 灰色字体，三级等字体最灰的一种 -->
+    <color name="gray">#9a9595</color>
+    <color name="gray_pressed">#b6b3b3</color>
+    <!-- 暗灰字体，三等级字体中间只用，用在显示内容上 -->
+    <color name="gray_dark">#414040</color>
+    <!-- 黑色字体，三等级字体黑字体，用在显示标题等，但有时候标题是使用中间颜色+B -->
+    <color name="black">#000000</color>
+
+    <color name="app_theme">#d40080</color>
+    <color name="app_theme_unable">#c57d7d7d</color>
+    <color name="app_theme_pressed">#e254aa</color>
+
+</resources>

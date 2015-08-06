@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变后的内容为："
+            android:textColor="#f00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00f"
+            android:textSize="14sp"
+            android:text="我是用来显示内容的"
+            android:id="@+id/show_content" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time类操作"
+            android:id="@+id/textView3"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/new_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="new Time()"/>
+            <Button
+                android:id="@+id/now_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set(current millis)"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/new_time"
+                android:layout_toEndOf="@+id/new_time" />
+            <Button
+                android:id="@+id/format"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="format(%Y/%m/%d %H:%M:%S)"
+                android:layout_below="@+id/new_time"/>
+
+            <Button
+                android:id="@+id/ymd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="year month monthDay"
+                android:layout_below="@+id/format"/>
+
+            <Button
+                android:id="@+id/time_zone_utc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time_zone UTC"
+                android:layout_below="@+id/ymd"/>
+
+            <Button
+                android:id="@+id/time_zone_cct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time_zone cct"
+                android:layout_below="@+id/ymd"
+                android:layout_toRightOf="@+id/time_zone_utc"
+                android:layout_toEndOf="@+id/time_zone_utc" />
+            <Button
+                android:id="@+id/to_millis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="toMillis"
+                android:layout_below="@+id/time_zone_utc"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/parse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="parse"
+                android:layout_below="@+id/time_zone_utc"
+                android:layout_toRightOf="@+id/to_millis"
+                android:layout_toEndOf="@+id/to_millis" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="日期选择器"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/wheel_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WheelDate"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

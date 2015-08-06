@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/entry_time_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.vector.uiforlife.view.WheelView
+            android:id="@+id/entry_time_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/TextGrayDark.Normal"
+            android:text="年"
+            android:textColor="#0288ce"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.vector.uiforlife.view.WheelView
+            android:id="@+id/entry_time_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/TextGrayDark.Normal"
+            android:text="月"
+            android:textColor="#0288ce"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.vector.uiforlife.view.WheelView
+            android:id="@+id/entry_time_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/TextGrayDark.Normal"
+            android:text="日"
+            android:textColor="#0288ce"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        style="@style/AppThemeBtn"
+        android:id="@+id/affirm"
+        android:layout_below="@+id/entry_time_container"
+        android:layout_margin="0dp"
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
