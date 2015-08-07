@@ -21,9 +21,7 @@
             style="@style/TextGrayDark.Normal"
             android:text="年"
             android:textColor="#0288ce"
-            android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_gravity="center_vertical"/>
 
         <com.vector.uiforlife.view.WheelView
             android:id="@+id/entry_time_month"
@@ -34,9 +32,7 @@
             style="@style/TextGrayDark.Normal"
             android:text="月"
             android:textColor="#0288ce"
-            android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_gravity="center_vertical"/>
 
         <com.vector.uiforlife.view.WheelView
             android:id="@+id/entry_time_day"
@@ -47,18 +43,14 @@
             style="@style/TextGrayDark.Normal"
             android:text="日"
             android:textColor="#0288ce"
-            android:layout_gravity="center_vertical"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_gravity="center_vertical"/>
     </LinearLayout>
 
     <Button
         style="@style/AppThemeBtn"
         android:id="@+id/affirm"
+        android:layout_height="35dp"
         android:layout_below="@+id/entry_time_container"
-        android:layout_margin="0dp"
-        android:text="确定"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:text="确定"/>
 
 </RelativeLayout>

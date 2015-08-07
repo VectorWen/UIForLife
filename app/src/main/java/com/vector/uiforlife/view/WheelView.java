@@ -299,6 +299,10 @@ public class WheelView extends ScrollView {
 
     }
 
+    /**
+     * [0 - max]
+     * @param position
+     */
     public void setSelection(int position) {
         final int p = position;
         selectedIndex = p + offset;
@@ -378,5 +382,7 @@ public class WheelView extends ScrollView {
         public void onSelected(int selectedIndex, String item) {
         }
     }
+
+
 }
 
