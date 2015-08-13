@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 import com.vector.uiforlife.R;
 import com.vector.uiforlife.fragment.ButtonFragment;
+import com.vector.uiforlife.fragment.NavigationFragment;
 import com.vector.uiforlife.fragment.WebFragment;
 
 /**
@@ -31,6 +32,10 @@ public class ShowFragmentActivity extends Activity{
             case "ButtonFragment":
                 ButtonFragment buttonFragment = new ButtonFragment();
                 setFragment(buttonFragment);
+                break;
+            case "NavigationFragment":
+                NavigationFragment navigationFragment = new NavigationFragment();
+                setFragment(navigationFragment);
                 break;
             default:
                 startWebFragment(mUrl);

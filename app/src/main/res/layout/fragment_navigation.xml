@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.vector.uiforlife.view.GradualCircleView
+            android:id="@+id/circle_1"
+            android:color="#ff64abdc"
+            android:alpha="255"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <com.vector.uiforlife.view.GradualCircleView
+            android:id="@+id/circle_2"
+            android:color="#ba9abf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <com.vector.uiforlife.view.GradualCircleView
+            android:id="@+id/circle_3"
+            android:color="#a0c74d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <com.vector.uiforlife.view.GradualCircleView
+            android:id="@+id/circle_4"
+            android:color="#f4d13e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="立 即 体 验"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_app_theme_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

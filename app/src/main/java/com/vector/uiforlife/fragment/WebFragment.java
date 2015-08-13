@@ -28,9 +28,13 @@ public class WebFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mUrl = getArguments().getString("url");
-        Uri uri = Uri.parse(mUrl);
-        if(uri.getHost()==null){
+        if(mUrl==null){
             mUrl = errorHtml;
+        }else{
+            Uri uri = Uri.parse(mUrl);
+            if(uri.getHost()==null){
+                mUrl = errorHtml;
+            }
         }
     }
 

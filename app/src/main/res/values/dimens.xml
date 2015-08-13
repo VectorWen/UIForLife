@@ -12,4 +12,6 @@
     <dimen name="large">16sp</dimen>
     <dimen name="x_large">18sp</dimen>
 
+    <dimen name="navigation_radius">4dp</dimen>
+
 </resources>

@@ -69,6 +69,12 @@ public class MainActivity extends BaseActivity {
             intent.putExtra("url","file:///android_asset/studyHtml/switch_button.html");
             startActivity(intent);
         }
+        @OnClick(R.id.navigation_fragment)
+        void navigationFragmentClick(){
+            Intent intent = new Intent(MainActivity.this,ShowFragmentActivity.class);
+            intent.putExtra("fragment","NavigationFragment");
+            startActivity(intent);
+        }
 
         ViewHolder(View view) {
             ButterKnife.inject(this, view);
