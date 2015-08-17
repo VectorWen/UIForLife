@@ -1,46 +1,460 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="#eeeeee"
-              android:orientation="vertical"
-              android:paddingBottom="@dimen/activity_vertical_margin"
-              android:paddingLeft="@dimen/activity_horizontal_margin"
-              android:paddingRight="@dimen/activity_horizontal_margin"
-              android:paddingTop="@dimen/activity_vertical_margin"
-              tools:context="com.kyleduo.switchbuttondemo.StyleActivity" >
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        style="@style/StyleTitleText"
-        android:text="默认样式" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.kyleduo.switchbuttondemo.StyleActivity">
 
-    <com.kyleduo.switchbutton.SwitchButton
-        android:id="@+id/sb_default"
-        style="@style/SwitchButtonStyle"/>
+        <TextView
+            style="@style/StyleTitleText"
+            android:text="默认样式"/>
 
-    <TextView
-        style="@style/StyleTitleText"
-        android:text="库提供的样式" />
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_default"
+            style="@style/SwitchButtonStyle"/>
 
-    <com.kyleduo.switchbutton.SwitchButton
-        android:id="@+id/sb_md"
-        style="@style/MaterialDesignStyle" />
-    <TextView
-        style="@style/StyleTitleText"
-        android:text="定义样式" />
+        <TextView
+            style="@style/StyleTitleText"
+            android:text="库提供的样式"/>
 
-    <com.kyleduo.switchbutton.SwitchButton
-        android:id="@+id/sb_custom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:onDrawable="@drawable/ic_switch_button_on"
-        app:offDrawable="@drawable/ic_switch_button_off"
-        app:thumbDrawable="@drawable/ic_switch_button_thumb"
-        app:thumb_margin="3dp"
-        app:insetLeft="10dp"
-        app:insetRight="10dp"
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_md"
+            style="@style/MaterialDesignStyle"/>
 
-        />
+        <TextView
+            style="@style/StyleTitleText"
+            android:text="定义样式"/>
 
-</LinearLayout>
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:offDrawable="@drawable/ic_switch_button_off"
+            app:onDrawable="@drawable/ic_switch_button_on"
+            app:thumbDrawable="@drawable/ic_switch_button_thumb"
+            />
+
+        <TextView
+            style="@style/TextGrayDark.Large"
+            android:layout_marginTop="10dp"
+            android:text="Android-Bootstrap"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:id="@+id/lblOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-github"/>
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/bbutton_danger"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-music"/>
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:id="@+id/lblTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/bbutton_primary"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-cog"/>
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/bbutton_warning"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-clock-o"/>
+
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:id="@+id/lblThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/bbutton_info"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-user"/>
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-adjust"/>
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/bbutton_danger"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-adn"/>
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/bbutton_primary"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-align-center"/>
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/bbutton_warning"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-anchor"/>
+
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/bbutton_info"
+                    android:textSize="32sp"
+                    fontawesometext:fa_icon="fa-android"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/btnOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Default"
+                    app:bb_icon_left="fa-github"
+                    app:bb_type="default"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/btnTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Primary"
+                    app:bb_icon_left="fa-trophy"
+                    app:bb_type="primary"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/btnThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Info"
+                    app:bb_icon_left="fa-thumb-tack"
+                    app:bb_type="info"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Success"
+                    app:bb_icon_right="fa-android"
+                    app:bb_type="success"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Warning"
+                    app:bb_icon_left="fa-plane"
+                    app:bb_type="warning"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Danger"
+                    app:bb_icon_right="fa-lemon-o"
+                    app:bb_type="danger"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="inverse"
+                    app:bb_icon_left="fa-floppy-o"
+                    app:bb_type="inverse"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Success"
+                    app:bb_icon_right="fa-android"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="success"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Warning"
+                    app:bb_icon_left="fa-flask"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="warning"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Danger"
+                    app:bb_icon_right="fa-question-circle"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="danger"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="inverse"
+                    app:bb_icon_left="fa-print"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="inverse"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Default"
+                    app:bb_icon_left="fa-globe"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="default"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Primary"
+                    app:bb_icon_right="fa-cloud"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="primary"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Info"
+                    app:bb_icon_left="fa-briefcase"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="info"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="Default"
+                    app:bb_icon_left="fa-info-circle"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="default"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="Primary"
+                    app:bb_icon_right="fa-picture-o"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="primary"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="Info"
+                    app:bb_icon_left="fa-unlock-o"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="info"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="Success"
+                    app:bb_icon_right="fa-chevron-circle-right"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="success"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="Warning"
+                    app:bb_icon_left="fa-location-arrow"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="warning"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="Danger"
+                    app:bb_icon_right="fa-code"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="danger"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="inverse"
+                    app:bb_icon_left="fa-thumbs-up"
+                    app:bb_roundedCorners="true"
+                    app:bb_type="inverse"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Just text"
+                    app:bb_roundedCorners="true"
+                    app:bb_size="default"
+                    app:bb_type="primary" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Two icons"
+                    app:bb_icon_left="fa-chevron-circle-right"
+                    app:bb_icon_right="fa-chevron-circle-left"
+                    app:bb_roundedCorners="true"
+                    app:bb_size="default"
+                    app:bb_type="primary" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:bb_icon_left="fa-female"
+                    app:bb_roundedCorners="true"
+                    app:bb_size="default"
+                    app:bb_type="primary" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:bb_icon_left="fa-certificate"
+                    app:bb_roundedCorners="true"
+                    app:bb_size="default"
+                    app:bb_type="info" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:bb_icon_left="fa-tachometer"
+                    app:bb_roundedCorners="true"
+                    app:bb_size="default"
+                    app:bb_type="success" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:bb_icon_left="fa-umbrella"
+                    app:bb_roundedCorners="true"
+                    app:bb_size="warning"
+                    app:bb_type="info" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:bb_icon_left="fa-money"
+                    app:bb_roundedCorners="true"
+                    app:bb_size="default"
+                    app:bb_type="danger" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:bb_icon_left="fa-desktop"
+                    app:bb_roundedCorners="true"
+                    app:bb_size="default"
+                    app:bb_type="inverse" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>
