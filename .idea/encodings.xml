@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
-    <file url="file://$PROJECT_DIR$/SwipeMenuListView" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/assets/baseHtml/404.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/assets/img/404.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/vector/uiforlife/view/WheelView.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/alpha_enter.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/alpha_exit.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_navigation0.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_navigation1.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_navigation2.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_navigation3.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/selector_app_theme_btn.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_navigation.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/view_wheel_date.xml" charset="UTF-8" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
-
