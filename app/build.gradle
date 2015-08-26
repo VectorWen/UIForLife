@@ -25,4 +25,7 @@ dependencies {
     compile 'com.beardedhen:androidbootstrap:+'
     compile 'com.kyleduo.switchbutton:library:1.2.9'
     compile 'com.baoyz.swipemenulistview:library:1.2.1'
+    compile 'com.google.guava:guava:18.+'
+
+    compile 'com.squareup.dagger:dagger-compiler:1.2.+'
 }
