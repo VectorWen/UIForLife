@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.vector.uiforlife.R;
+import com.vector.uiforlife.download.DownloadManagerFragment;
 import com.vector.uiforlife.fragment.ButtonFragment;
 import com.vector.uiforlife.fragment.NavigationFragment;
 import com.vector.uiforlife.fragment.WebFragment;
@@ -36,6 +37,10 @@ public class ShowFragmentActivity extends Activity{
             case "NavigationFragment":
                 NavigationFragment navigationFragment = new NavigationFragment();
                 setFragment(navigationFragment);
+                break;
+            case "DownloadManagerFragment":
+                DownloadManagerFragment downloadManagerFragment = new DownloadManagerFragment();
+                setFragment(downloadManagerFragment);
                 break;
             default:
                 startWebFragment(mUrl);

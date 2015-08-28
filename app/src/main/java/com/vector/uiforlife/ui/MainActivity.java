@@ -62,6 +62,12 @@ public class MainActivity extends BaseActivity {
         void showFragmentClick(){
             startActivity(ShowFragmentActivity.class);
         }
+        @OnClick(R.id.download_manager_fragment)
+        void downloadMangerFragmentClick(){
+            Intent intent = new Intent(MainActivity.this,ShowFragmentActivity.class);
+            intent.putExtra("fragment","DownloadManagerFragment");
+            startActivity(intent);
+        }
         @OnClick(R.id.button_fragment)
         void buttonFragmentClick(){
             Intent intent = new Intent(MainActivity.this,ShowFragmentActivity.class);
