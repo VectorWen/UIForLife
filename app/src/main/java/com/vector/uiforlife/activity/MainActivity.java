@@ -1,11 +1,10 @@
-package com.vector.uiforlife.ui;
+package com.vector.uiforlife.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.vector.uiforlife.R;
-import com.vector.uiforlife.fragment.ButtonFragment;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -79,6 +78,13 @@ public class MainActivity extends BaseActivity {
         void navigationFragmentClick(){
             Intent intent = new Intent(MainActivity.this,ShowFragmentActivity.class);
             intent.putExtra("fragment","NavigationFragment");
+            startActivity(intent);
+        }
+
+        @OnClick(R.id.edit_text_fragment)
+        void editTextFragmentClick(){
+            Intent intent = new Intent(MainActivity.this,ShowFragmentActivity.class);
+            intent.putExtra("fragment","EditTextFragment");
             startActivity(intent);
         }
 

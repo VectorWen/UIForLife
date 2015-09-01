@@ -1,4 +1,4 @@
-package com.vector.uiforlife.ui;
+package com.vector.uiforlife.activity;
 
 import android.content.Intent;
 import android.database.Cursor;

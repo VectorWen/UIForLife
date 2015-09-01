@@ -1,10 +1,8 @@
-package com.vector.uiforlife.ui;
+package com.vector.uiforlife.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 
-import com.vector.uiforlife.entity.Login;
-import com.vector.uiforlife.entity.ResponseHeader;
 import com.vector.uiforlife.network.Bloodsucker;
 
 /**

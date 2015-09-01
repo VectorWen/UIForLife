@@ -88,6 +88,12 @@
         android:text="DownloadManager 系统下载器"
         android:id="@+id/download_manager_fragment"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EditTextFragment 编辑器、输入框"
+        android:id="@+id/edit_text_fragment"/>
+
 
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:layout_width="wrap_content"

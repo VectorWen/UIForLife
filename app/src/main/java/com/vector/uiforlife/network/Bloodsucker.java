@@ -11,8 +11,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.vector.uiforlife.entity.ResponseHeader;
-import com.vector.uiforlife.ui.LoginActivity;
-import com.vector.uiforlife.ui.NetworkActivity;
+import com.vector.uiforlife.activity.LoginActivity;
+import com.vector.uiforlife.activity.NetworkActivity;
 
 
 /**

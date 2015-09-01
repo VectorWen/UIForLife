@@ -1,4 +1,4 @@
-package com.vector.uiforlife.ui;
+package com.vector.uiforlife.activity;
 
 import android.os.Bundle;
 import android.widget.RadioButton;

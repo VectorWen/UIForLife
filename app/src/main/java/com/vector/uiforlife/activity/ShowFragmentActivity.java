@@ -1,4 +1,4 @@
-package com.vector.uiforlife.ui;
+package com.vector.uiforlife.activity;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import com.vector.uiforlife.R;
 import com.vector.uiforlife.download.DownloadManagerFragment;
 import com.vector.uiforlife.fragment.ButtonFragment;
+import com.vector.uiforlife.fragment.EditTextFragment;
 import com.vector.uiforlife.fragment.NavigationFragment;
 import com.vector.uiforlife.fragment.WebFragment;
 
@@ -41,6 +42,10 @@ public class ShowFragmentActivity extends Activity{
             case "DownloadManagerFragment":
                 DownloadManagerFragment downloadManagerFragment = new DownloadManagerFragment();
                 setFragment(downloadManagerFragment);
+                break;
+            case "EditTextFragment":
+                EditTextFragment editTextFragment = new EditTextFragment();
+                setFragment(editTextFragment);
                 break;
             default:
                 startWebFragment(mUrl);
